@@ -1,4 +1,24 @@
 /* styles.css */
 
 
+body {
+    display: flex;
+    flex-direction: column;
 
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#navbar .container {
+    flex-direction: row;
+    background-color: blue;
+}
+
+.nav-item {
+   background-color: light-grey;
+} 
