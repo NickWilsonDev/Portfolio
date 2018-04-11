@@ -1,0 +1,169 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+}
+a {
+    color: blue;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-left-container {
+    background-color: blue;
+}
+
+.nav-right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item {
+   /* light grey */
+   background-color: #DCDCDC;
+}
+
+.container {
+    background-color: #DCDCDC;
+}
+
+/* Icon section */
+.devicon-container {
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.icons.major a {
+    margin: .25em .35em;
+    font-size: 3em;
+    text-decoration: none;
+    border: none;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon.major {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 3px;
+    border: solid 2px #fff;
+    display: inline-block;
+    font-size: 1.35em;
+    height: calc(3em + 2px);
+    line-height: 3em;
+    text-align: center;
+    width: calc(3em + 2px);
+}
+
+.icon.major:before {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+    .icon.major {
+        font-size: 1em;
+    }
+}
+
+.devicon {
+    font-size: 4rem;
+}
+
+a.skills-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a.skills-icons span {
+    font-size: 1em;
+}
+
+a.nav-link: link {
+    text-decoration: none;
+}
+
+a.nav-link: visited {
+    text-decoration: none;
+}
+
+.skills-icons span {
+    margin-top: 10px;
+    opacity:0;
+    transition: opacity 0.5s 0.5s;
+}
+
+.skills-icons:hover {
+    color: #21b2a6;
+}
+
+.skills-icons:hover span {
+    color: #21b2a6;
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.cbp-ig-icon:before {
+    font-family: 'devicon';
+    font-size: 6em;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cbp-ig-grid .cbp-ig-title {
+    margin: 20px 0 10px;
+    padding: 20px 0 0;
+    font-size: 1em;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    transition: transform 0.2s;
+}
+
