@@ -1,9 +1,9 @@
 /* styles.css */
 
 body {
-    display: flex;
+ /*   display: flex;
     flex-direction: column;
-    background-color: #F4F4F4;
+    background-color: #F4F4F4;*/
 }
 a {
     color: blue;
@@ -11,10 +11,16 @@ a {
 }
 
 #navbar {
+ /*   top: 0;
+    z-index: 99; */
+}
+
+.nav-wrapper {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -23,6 +29,10 @@ a {
 }
 
 .nav-right-container {
+    margin-left: auto;
+}
+
+.nav-right-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,62 +56,6 @@ a {
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-div.icons.major a {
-    margin: .25em .35em;
-    font-size: 3em;
-    text-decoration: none;
-    border: none;
-}
-
-.icon {
-    text-decoration: none;
-    border-bottom: none;
-    position: relative;
-}
-
-.icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-.icon > .label {
-    display: none;
-}
-
-.icon.major {
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    border-radius: 3px;
-    border: solid 2px #fff;
-    display: inline-block;
-    font-size: 1.35em;
-    height: calc(3em + 2px);
-    line-height: 3em;
-    text-align: center;
-    width: calc(3em + 2px);
-}
-
-.icon.major:before {
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    display: inline-block;
-    font-size: 1.5em;
-}
-
-@media screen and (max-width: 736px) {
-    .icon.major {
-        font-size: 1em;
-    }
 }
 
 .devicon {
@@ -145,6 +99,7 @@ a.nav-link: visited {
     transition: opacity 0.8s;
 }
 
+/*
 .cbp-ig-icon:before {
     font-family: 'devicon';
     font-size: 6em;
@@ -166,4 +121,4 @@ a.nav-link: visited {
     -moz-transition: -moz-transform 0.2s;
     transition: transform 0.2s;
 }
-
+*/
