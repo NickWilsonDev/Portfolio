@@ -40,7 +40,8 @@ a {
 
 .nav-item {
    /* light grey */
-   background-color: #DCDCDC;
+    padding-right: 5px;
+    background-color: #DCDCDC;
 }
 
 .container {
@@ -63,6 +64,7 @@ a {
 }
 
 a.skills-icons {
+    margin: 5px 5px 5px 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
