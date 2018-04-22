@@ -1,9 +1,6 @@
 /* styles.css */
 
 body {
- /*   display: flex;
-    flex-direction: column;
-    background-color: #F4F4F4;*/
 }
 a {
     color: blue;
@@ -16,6 +13,8 @@ a {
 }
 
 .nav-wrapper {
+    background-color: #f4f7fc;
+    opacity: 0.75;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,11 +23,17 @@ a {
     justify-content: space-between;
 }
 
+.nav-wrapper:hover {
+    opacity: 1;
+}
+
 .nav-left-container {
-    background-color: blue;
+    opacity: 0.95;
+    font-size: 140%;
 }
 
 .nav-right-container {
+    opacity: 0.95;
     margin-left: auto;
 }
 
@@ -40,8 +45,17 @@ a {
 
 .nav-item {
    /* light grey */
+    opacity: 0.90;
+    font-size: 140%;
     padding-right: 5px;
-    background-color: #DCDCDC;
+}
+
+.nav-button {
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
 }
 
 .container {
@@ -101,26 +115,14 @@ a.nav-link: visited {
     transition: opacity 0.8s;
 }
 
-/*
-.cbp-ig-icon:before {
-    font-family: 'devicon';
-    font-size: 6em;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
+
+/* contact section */
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.cbp-ig-grid .cbp-ig-title {
-    margin: 20px 0 10px;
-    padding: 20px 0 0;
-    font-size: 1em;
-    position: relative;
-    -webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    transition: transform 0.2s;
+.contact-button {
+    margin: 0 5px 0 5px;
 }
-*/
