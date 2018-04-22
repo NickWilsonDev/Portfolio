@@ -58,6 +58,10 @@ a {
     border-left: 1px solid #CCCCCC;
 }
 
+.nav-button:hover {
+    background-color: #c0d6f9;
+}
+
 .container {
     background-color: #DCDCDC;
 }
