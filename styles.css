@@ -1,12 +1,16 @@
 /* styles.css */
 
 body {
+    position: relative;
+    top: 30px;
 }
 a {
     color: blue;
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
 }
 
+#about {
+}
 #navbar {
  /*   top: 0;
     z-index: 99; */
