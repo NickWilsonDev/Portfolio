@@ -1,5 +1,9 @@
 /* styles.css */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     top: 30px;
@@ -10,7 +14,36 @@ a {
 }
 
 #about {
+    display: flex;
+    flex-direction: row;
 }
+
+.about-left {
+    flex-basis: 40%;
+}
+
+.about-right ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.about-right ul li {
+    padding: 5px;
+    padding-top: 10px;
+    display: inline;
+}
+
+.profile-pic {
+    width: 80%;
+}
+
+.shortcut-button {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
 #navbar {
  /*   top: 0;
     z-index: 99; */
@@ -52,6 +85,19 @@ a {
     opacity: 0.90;
     font-size: 140%;
     padding-right: 5px;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 .nav-button {
