@@ -1,4 +1,26 @@
 /* styles.css */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 150px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: .2em .2em .5em #333;
+    transition: all 1s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    height: 150px;
+    width: 100px;
+    border: 1px solid #1a57ba;
+    box-shadow: .3em .3em .6em #528ff2;
+}
 
 html {
     scroll-behavior: smooth;
@@ -43,6 +65,9 @@ a {
     border-radius: 10px;
 }
 
+.shortcut-button:hover {
+    background-color: black;
+}
 
 #navbar {
  /*   top: 0;
