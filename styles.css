@@ -11,15 +11,21 @@
     }
 }
 
+.project-container {
+    border: 1px solid black;
+    color: red;
+}
+
 .card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
-    height: 150px;
-    width: 100px;
+    height: 250px;
+    width: 200px;
     border: 1px solid black;
     border-radius: 3px;
     box-shadow: .2em .2em .5em #333;
@@ -29,13 +35,20 @@
 .card img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+
+.card a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    height: 150px;
-    width: 100px;
+    height: 250px;
+    width: 200px;
     border: 1px solid #1a57ba;
     box-shadow: .3em .3em .6em #528ff2;
 }
